@@ -37,7 +37,7 @@ const forActive = (all) => {
         const sec = document.getElementById(din.target.id);
 
         if (din && din.isIntersecting) {
-            listElement.classList.add("active");
+            listElement.classList.remove("active");
             sec.classList.add("active");
         } else {
             if (sec.classList.contains("active")) {
